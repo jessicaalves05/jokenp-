@@ -22,6 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 @keyframes piscar {
@@ -88,4 +89,31 @@ p {
 
 .machine-score span {
     color: rgb(169, 31, 31);
+}
+
+@media screen and (max-width: 460px) {
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .container {
+        width: 200px;
+        padding: 10px;
+        transition: width 0.5s ease, height 0.5s ease;
+    }
+
+    .buttons {
+        gap: 20px;
+    }
+
+    button {
+        font-size: 25px;
+    }
+
+    .machine-score{
+        font-size:20px;
+        text-align: center;
+    }
+    
 }

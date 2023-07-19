@@ -25,7 +25,9 @@ const playThegame = (human, machine) => {
     if (human === machine) {
         result.innerHTML = "Deu empate!&#128528"
         result.style.fontSize = "40px";
-        result.style.color = "rgb(0,30,102)";
+        result.style.color = "rgb(0,30,102)"
+        if (window.innerWidth < 460) {
+            result.style.fontSize = "20px"}
     } else if (
         (human === 'paper' && machine === 'rock') ||
         (human === 'rock' && machine === 'scissors') ||
@@ -33,18 +35,23 @@ const playThegame = (human, machine) => {
     ) {
         humanScoreNumber++
         humanScore.innerHTML = humanScoreNumber
-        result.innerHTML = "você ganhou!&#x1F601";
-        result.style.fontSize = "40px";
-        result.style.color = "rgb(204,170,0)";
+        result.innerHTML = "você ganhou!&#x1F601"
+        result.style.fontSize = "40px"
+        result.style.color = "rgb(204,170,0)"
+        if (window.innerWidth < 768) {
+            result.style.fontSize = "20px"}
     } else {
         machineScoreNumber++
         machineScore.innerHTML = machineScoreNumber
-        result.innerHTML = "Você perdeu!&#128557";
+        result.innerHTML = "Você perdeu!&#128557"
         result.style.fontSize = "40px";
-        result.style.color = "rgb(245,0,51)";
+        result.style.color = "rgb(245,0,51)"
+        if (window.innerWidth < 768) {
+            result.style.fontSize = "20px"}
     }
 
 }
+
 
 // papel -> pedra ->tesoura
 
