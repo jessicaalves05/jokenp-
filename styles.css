@@ -83,6 +83,11 @@ p {
     font-size: 20px;
 }
 
+.machine-choice{
+    margin-top: 30px;
+    color: rgb(106, 12, 194);
+}
+
 .your-score span {
     color: rgb(47, 47, 144);
 }
